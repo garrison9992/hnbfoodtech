@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Textured Vegetable Protein | HNB FoodTech</title>
+
+<meta name="description" content="Textured Vegetable Protein for meat processing applications. TVP granules, flakes, chunks and strands supplied by HNB FoodTech.">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background: rgba(255,255,255,0.96);
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    z-index: 1000;
+}
+
+.logo {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.back-link {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100svh;
+    padding: 130px 6% 80px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-inner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 82px);
+    line-height: 0.98;
+    font-weight: 700;
+    max-width: 900px;
+    letter-spacing: -2px;
+}
+
+.hero-text {
+    max-width: 620px;
+    margin-top: 28px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-image {
+    margin-top: 45px;
+    width: 100%;
+    max-width: 900px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 100px 6%;
+}
+
+.section-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.section-text {
+    max-width: 760px;
+    font-size: 17px;
+    color: #555;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.products {
+    background: #f7f7f5;
+}
+
+.product-grid {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 18px;
+    border: 1px solid #e5e5e5;
+}
+
+.product-image-wrap {
+    width: 100%;
+    height: 310px;
+    background: #f3f3f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 24px 8px 10px;
+}
+
+.product-name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.product-type {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 14px;
+}
+
+.product-description {
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   APPLICATIONS
+========================= */
+
+.application-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.application {
+    border-top: 1px solid #222;
+    padding: 20px 0;
+}
+
+.application h3 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.application p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    background: #111;
+    color: #fff;
+}
+
+.benefit-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.benefit {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.benefit h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info-table {
+    width: 100%;
+    margin-top: 45px;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    text-align: left;
+    padding: 17px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-table th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #f7f7f5;
+}
+
+.contact-box {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    padding: 45px;
+    background: #fff;
+}
+
+.contact-box h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    color: #555;
+    margin-bottom: 28px;
+    max-width: 600px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid #111;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-button.primary {
+    background: #111;
+    color: #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: #aaa;
+    padding: 35px 6%;
+    font-size: 12px;
+}
+
+.footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 64px;
+        padding: 0 20px;
+    }
+
+    .logo-main {
+        font-size: 21px;
+    }
+
+    .logo-sub {
+        font-size: 7px;
+        letter-spacing: 2.5px;
+    }
+
+    .back-link {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 110px 20px 55px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        margin-top: 22px;
+    }
+
+    .hero-image {
+        height: 240px;
+        margin-top: 30px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .product-image-wrap {
+        height: 250px;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+
+    .application-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .info-table {
+        font-size: 14px;
+    }
+
+    .info-table th,
+    .info-table td {
+        padding: 13px 5px;
+    }
+
+    .contact-box {
+        padding: 30px 22px;
+    }
+
+    .contact-box h3 {
+        font-size: 25px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-button {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="logo">
+        <span class="logo-main">HNB</span>
+        <span class="logo-sub">FOODTECH</span>
+    </a>
+
+    <a href="index.html" class="back-link">← Home</a>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="eyebrow">
+            HNB FoodTech
+        </div>
+
+        <h1>
+            Textured<br>
+            Vegetable<br>
+            Protein
+        </h1>
+
+        <p class="hero-text">
+            Functional plant protein ingredients for meat processing,
+            food manufacturing and formulation applications.
+        </p>
+
+        <img
+            src="./773s.2.webp"
+            alt="Textured Vegetable Protein"
+            class="hero-image"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- WHAT IS TVP -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            01 / Overview
+        </div>
+
+        <h2 class="section-title">
+            A versatile ingredient<br>
+            for food processing.
+        </h2>
+
+        <p class="section-text">
+            Textured Vegetable Protein (TVP) is a plant-based protein
+            ingredient designed for use in a wide range of food
+            processing applications. Its different textures and forms
+            allow manufacturers to develop products with specific
+            structure, bite and formulation requirements.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            02 / Product Forms
+        </div>
+
+        <h2 class="section-title">
+            Different forms.<br>
+            Different applications.
+        </h2>
+
+        <p class="section-text">
+            TVP can be supplied in different physical forms to suit
+            different processing requirements.
+        </p>
+
+
+        <div class="product-grid">
+
+
+            <!-- GRANULES -->
+
+            <div class="product-card">
+
+                <div class="product-image-wrap">
+
+                    <img
+                        src="./773s.2.webp"
+                        alt="TVP Granules"
+                        class="product-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-type">
+                        Product Form
+                    </div>
+
+                    <h3 class="product-name">
+                        TVP Granules
+                    </h3>
+
+                    <p class="product-description">
+                        Small textured protein pieces suitable for
+                        sausage, meatball and other processed food
+                        applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FLAKES -->
+
+            <div class="product-card">
+
+                <div class="product-image-wrap">
+
+                    <img
+                        src="991SCY.2.webp"
+                        alt="TVP Flakes"
+                        class="product-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-type">
+                        Product Form
+                    </div>
+
+                    <h3 class="product-name">
+                        TVP Flakes
+                    </h3>
+
+                    <p class="product-description">
+                        Flake-shaped textured protein designed for
+                        food formulations where a distinctive texture
+                        and structure are required.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHUNKS -->
+
+            <div class="product-card">
+
+                <div class="product-image-wrap">
+
+                    <img
+                        src="1100AP.2.webp"
+                        alt="TVP Chunks"
+                        class="product-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-type">
+                        Product Form
+                    </div>
+
+                    <h3 class="product-name">
+                        TVP Chunks
+                    </h3>
+
+                    <p class="product-description">
+                        Larger textured protein pieces suitable for
+                        applications requiring a more substantial
+                        bite and visible structure.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STRANDS -->
+
+            <div class="product-card">
+
+                <div class="product-image-wrap">
+
+                    <img
+                        src="Soy-Protein-for-Stuffing.webp"
+                        alt="TVP Strands"
+                        class="product-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-type">
+                        Product Form
+                    </div>
+
+                    <h3 class="product-name">
+                        TVP Strands
+                    </h3>
+
+                    <p class="product-description">
+                        Fibrous, strand-like textured protein suitable
+                        for fillings and food products where a
+                        meat-like fibrous structure is desired.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- APPLICATIONS -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            03 / Applications
+        </div>
+
+        <h2 class="section-title">
+            Designed for<br>
+            food applications.
+        </h2>
+
+
+        <div class="application-grid">
+
+            <div class="application">
+
+                <h3>Sausage</h3>
+
+                <p>
+                    Suitable for sausage formulations and other
+                    processed meat products.
+                </p>
+
+            </div>
+
+
+            <div class="application">
+
+                <h3>Meatballs</h3>
+
+                <p>
+                    Can be incorporated into meatball and formed
+                    meat product formulations.
+                </p>
+
+            </div>
+
+
+            <div class="application">
+
+                <h3>Burgers & Patties</h3>
+
+                <p>
+                    Different TVP forms can be considered for
+                    formed products and mixed formulations.
+                </p>
+
+            </div>
+
+
+            <div class="application">
+
+                <h3>Fillings</h3>
+
+                <p>
+                    Suitable for selected filling applications
+                    requiring texture and protein functionality.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
+
+<section class="benefits">
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            04 / Considerations
+        </div>
+
+        <h2 class="section-title">
+            Functional.<br>
+            Flexible.<br>
+            Practical.
+        </h2>
+
+
+        <div class="benefit-grid">
+
+            <div class="benefit">
+
+                <h3>Protein</h3>
+
+                <p>
+                    A plant-based protein ingredient for food
+                    formulation.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <h3>Texture</h3>
+
+                <p>
+                    Different physical forms allow manufacturers
+                    to select the desired texture.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <h3>Flexibility</h3>
+
+                <p>
+                    Suitable for different formulations and
+                    processing applications.
+                </p>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <h3>Cost Optimization</h3>
+
+                <p>
+                    May provide opportunities for formulation and
+                    cost optimization, depending on the application.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCT INFORMATION -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            05 / Product Information
+        </div>
+
+        <h2 class="section-title">
+            Product forms<br>
+            at a glance.
+        </h2>
+
+
+        <table class="info-table">
+
+            <thead>
+
+                <tr>
+                    <th>Product Form</th>
+                    <th>Typical Applications</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>TVP Granules</td>
+                    <td>Sausage, meatballs, processed foods</td>
+                </tr>
+
+                <tr>
+                    <td>TVP Flakes</td>
+                    <td>Various food formulations</td>
+                </tr>
+
+                <tr>
+                    <td>TVP Chunks</td>
+                    <td>Meat products, fillings and structured applications</td>
+                </tr>
+
+                <tr>
+                    <td>TVP Strands</td>
+                    <td>Fillings and fibrous-texture applications</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <div class="section-inner">
+
+        <div class="section-label">
+            06 / Contact
+        </div>
+
+        <div class="contact-box">
+
+            <h3>
+                Interested in TVP
+                for your production?
+            </h3>
+
+            <p>
+                Contact HNB FoodTech for product information,
+                samples and cooperation opportunities.
+            </p>
+
+            <div class="contact-links">
+
+                <a
+                    href="mailto:zhang@hnbfoodtech.com"
+                    class="contact-button primary"
+                >
+                    Email HNB
+                </a>
+
+                <a
+                    href="https://wa.me/85254626197"
+                    target="_blank"
+                    class="contact-button"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+            © 2026 HNB FoodTech
+        </div>
+
+        <div>
+            Textured Vegetable Protein
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
